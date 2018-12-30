@@ -9,21 +9,21 @@
 </head>
 <body>
 
-    <header class="container header">
+    <header class="header">
         <nav class="top-nav">
-            <ul>
-                <li><a href="#">Pathé Thuis</a></li>
-                <li><a href="#">Pathé Kids</a></li>
+            <ul class="top__nav nav-left">
+                <li class="stripe"><a href="#">Pathé Thuis</a></li>
+                <li class="stripe"><a href="#">Pathé Kids</a></li>
                 <li><a href="#">Pathé Business</a></li>
             </ul>
 
-            <ul>
-                <li><a href="#">Klantenservice</a></li>
+            <ul class="top__nav nav-right">
+                <li class="stripe"><a href="#">Klantenservice</a></li>
                 <li><a href="#">English</a></li>
             </ul>
         </nav>
-
-        <nav class="main-nav">
+        <div class="align-wrapper-one">
+            <nav class="main-nav">
             <a href="#">
                 <img src="https://www.pathe.nl/assets/img/brand/logo-01.png" alt="Pathé">
             </a>
@@ -36,20 +36,21 @@
 
             <div class="search">
                 <a href="#">
-                    <span class="nav-icon">
-                        <!-- background img: url(/assets/img/navigation/user-black.svg) -->
-                    </span>
+                        <img class="login-img" src="https://www.pathe.nl/assets/img/navigation/user-black.svg" alt="Pathé">
                 </a>
-                <form action="#" class="search-bar">
-                    <input type="search" class="search-bar">
-                    <button title="Zoeken"></button>
+                <form action="#" class="search-bar-wrapper">
+                    <button class="search-btn" title="Zoeken"></button>
+                    <input type="search" class="search-bar" placeholder="Zoeken">
+                   
                 </form>
             </div>
-        </nav>
+            </nav>
+        </div>
 
     </header>
 
-    <main class="container main">
+    <main class="main">
+        <div class="align-wrapper-two">
         <section class="tickets">
             <h3 class="tickets-title">Snel Tickets Kopen</h3>
             <div class="tickets-dropdown">
@@ -57,13 +58,16 @@
             </div>
             <button class="btn btn-tickets">Verder</button>
         </section>
+        </div>
 
         <section class="hero">
+            <div class="hero-click">
             <a href="#" class="hero-link">
-                <img src="https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg">
+                <!-- <img src="https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg"> -->
                 <h2 class="hero-title">Bumblebee</h2>
                 <button class="btn">Tijden & Tickets</button>
             </a>
+            </div>
             <div class="hero-carousel-top">
                 <h3 class="carousel-title">Top Films</h3>
                 <a href="#" class="all-movies">Alle Films</a>
@@ -129,7 +133,7 @@
 
 
 
-    <footer class="container footer">
+    <footer class="footer">
 
     </footer>
     </main>
