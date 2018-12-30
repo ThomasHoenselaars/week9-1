@@ -202,10 +202,73 @@ border-radius: 8px 8px 8px 8px;
     background-size: 100%;
     background-repeat: no-repeat;
 
+    display: grid;
+    grid-template-rows: 30rem auto auto;
+
     /* background: linear-gradient(180deg, transparent, #000); */
 }
 
+.hero-click {
+    align-self: center;
+}
 
+.hero-title {
+    color: white;
+    background: black;
+    font-size: 40px;
+    width: 18rem;
+    text-align: center;
+    /* margin-left: 2rem; */
+    text-transform: uppercase;
+}
+
+.hero-link .btn {
+    /* margin-left: 2rem; */
+    text-transform: uppercase;
+    font-weight: 700;
+   
+    
+}
+
+.hero-carousel-top {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-title {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.all-movies {
+    color: white;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+.all-movies:after {
+    content: " >"
+}
+
+.carousel-links {
+    display: flex;
+   
+}
+
+.carousel-links > li {
+    margin: 0 .2rem;
+    background: var(--black);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.carousel-links > li > a {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 .hero-carousel {
     display: grid;
