@@ -26,6 +26,7 @@ a {
 
 img {
     max-width: 100%;
+    width: 100%;
 }
 
 body {
@@ -71,11 +72,11 @@ body {
 }
 
 .block.block-tickets {
-    background: var(--black);
+    background: #151515;
 }
 
 .block.block-hero {
-    background: var(--black);
+    background: #151515;
 }
 
 .main-nav {
@@ -89,6 +90,7 @@ body {
 
 .main-nav ul {
     display: flex;
+   
     margin: 0 1rem;
 }
 
@@ -272,13 +274,25 @@ border-radius: 8px 8px 8px 8px;
 
 .hero-carousel {
     display: grid;
-    grid-gap: 0rem;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
    
 }
 
 .movie {
-    display: grid;
+    /* display: grid; */
     justify-items: center;
+    
 }
 
+
+.movie a {
+    display: grid;
+    justify-items: center;
+    color: white;
+}
+
+.movie-caption {
+    font-size: 12px;
+    font-weight: 100;
+}
