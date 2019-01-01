@@ -275,6 +275,7 @@ border-radius: 8px 8px 8px 8px;
 .hero-carousel {
     max-width: 100%;
     display: grid;
+    grid-gap: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-auto-flow: column;
     grid-auto-columns: 200px;
@@ -288,6 +289,7 @@ border-radius: 8px 8px 8px 8px;
     /* display: grid; */
     justify-items: center;
     
+    
 }
 
 
@@ -295,6 +297,10 @@ border-radius: 8px 8px 8px 8px;
     display: grid;
     justify-items: center;
     color: white;
+}
+
+.movie img {
+    border: 1px solid var(--grey);
 }
 
 .movie-caption {
