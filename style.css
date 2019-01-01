@@ -77,6 +77,8 @@ body {
 
 .block.block-hero {
     background: #151515;
+    background: url(https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg);
+
 }
 
 .main-nav {
@@ -221,7 +223,7 @@ select.custom-select {
 .hero {
     grid-column: 2;
     
-    background: url(https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg);
+    /* background: url(https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg); */
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
