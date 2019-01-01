@@ -175,6 +175,16 @@ border-radius: 8px 8px 8px 8px;
     width: 300px;
 }
 
+select.custom-select {
+    width: 18rem;
+    background: url() no-repeat right center;   
+    height: 29px;
+   overflow: hidden;
+   outline: none;
+   font-size: 14px;
+   font-weight: 700;
+}
+
 .tickets a {
     color: var(--black); 
     font-weight: 700; 
@@ -194,6 +204,18 @@ border-radius: 8px 8px 8px 8px;
     height: 2.5rem;
     border-radius: 5px;
     max-width: 5rem;
+}
+
+.btn.btn-tickets {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    min-width: 10rem;
+}
+
+.btn-tickets:after {
+    content: " >";
 }
 
 .hero {
@@ -307,3 +329,7 @@ border-radius: 8px 8px 8px 8px;
     font-size: 12px;
     font-weight: 100;
 }
+
+
+
+
