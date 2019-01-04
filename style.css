@@ -78,7 +78,14 @@ body {
 .block.block-hero {
     background: #151515;
     background: url(https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg);
+    box-shadow: inset 0px -12px 66px 43px rgb(0, 0, 0);
 
+}
+
+
+
+.block.block_order {
+    background-color: #fff;
 }
 
 .main-nav {
@@ -264,7 +271,7 @@ select.custom-select {
 .carousel-title {
     color: white;
     text-transform: uppercase;
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
 }
 
 .all-movies {
@@ -289,6 +296,10 @@ select.custom-select {
     border-radius: 5px;
 }
 
+.carousel-links > li:hover {
+    background: var(--grey)
+}
+
 .carousel-links > li > a {
     color: white;
     font-size: 13px;
@@ -305,7 +316,7 @@ select.custom-select {
     grid-auto-columns: 200px;
     
     /* grid-template-columns: repeat(auto-fill, 200px); */
-    overflow-x: scroll;   
+    overflow-x: auto;   
    
 }
 
@@ -331,6 +342,105 @@ select.custom-select {
     font-size: 12px;
     font-weight: 100;
 }
+
+.order {
+    grid-column: 2;
+    max-width: 100%;
+}
+
+h3.order-title {
+    text-transform: uppercase;
+}
+
+.selector > li {
+    margin: 0 .2rem;
+    background: var(--black);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.choice.selector > li > a {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.selector > li > a {
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+.selector > li:hover {
+    background: var(--grey)
+}
+
+.choice.selector {
+    display: flex;
+}
+
+.city.selector {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
+    grid-gap: .3rem 0rem;
+    /* justify-items: center; */
+    max-width: 75rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.choice.selector li:nth-child(2) {
+    background: var(--yellow);
+    background-image: linear-gradient(to bottom,#ffca2a,#ffc426);
+}
+
+.choice.selector li:nth-child(2) a {
+    color: black;
+}
+
+.news {
+    grid-column: 2;
+ }
+
+h3.news-title {
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; 
+    margin-bottom: 5rem;
+}
+
+.news_item_wrapper {
+   overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -2px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.news_item_wrapper > a {
+    color: black;
+}
+
+h2.news-caption {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 .5rem;
+    text-align: center;  
+}
+
+/* .news-item img{
+    
+    border-radius: 10px 10px 0 0;
+} */
 
 
 
