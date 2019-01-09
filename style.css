@@ -82,10 +82,14 @@ body {
 
 }
 
-
-
 .block.block_order {
     background-color: #fff;
+}
+
+.block.block-footer {
+    background: var(--yellow);
+    background-image: linear-gradient(to bottom,#ffca2a,#ffc426);
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
 }
 
 .main-nav {
@@ -441,6 +445,62 @@ h2.news-caption {
     
     border-radius: 10px 10px 0 0;
 } */
+
+.footer {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.block-footer a {
+    color: black;
+    font-size: 14px;
+}
+
+.site-index,
+.footer-nav,
+.socialmedia-nav {
+    display: flex;
+    padding: .3rem 0;
+   
+}
+
+.footer-nav li {
+    margin: .5rem;
+}
+
+.socialmedia-nav li {
+    margin: 1rem;
+}
+
+.socialmedia-nav .twitter {
+    background: url(https://www.pathe.nl/assets/img/icons/social/twitter@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .fb {
+    background: url(https://www.pathe.nl/assets/img/icons/social/facebook@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .insta {
+    background: url(https://www.pathe.nl/assets/img/icons/social/instagram@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+
 
 
 
