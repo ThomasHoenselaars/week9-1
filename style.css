@@ -78,6 +78,10 @@ body {
 .block.block-hero {
     background: #151515;
     background: url(https://pathe.blueconic.net/rest/dialogues/files/1ca55c1f-d2cf-4d6c-8e9f-8cdd36d86ce7/carousel_bumblebee.jpg);
+    
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
     box-shadow: inset 0px -12px 66px 43px rgb(0, 0, 0);
 
 }
@@ -305,6 +309,7 @@ select.custom-select {
 }
 
 .carousel-links > li > a {
+    display: block;
     color: white;
     font-size: 13px;
     font-weight: 700;
@@ -503,5 +508,72 @@ h2.news-caption {
 
 
 
+/*  responsive */
+
+@media screen and (max-width: 1200px) {
+
+    .header .top-nav {
+        display: none;
+    }
+
+    .main-nav ul {
+        display: none;
+    }
+
+    .login-img {
+        display: none;
+    }
+
+    .block.block-tickets {
+        display: none;
+    }
+
+    .movie {
+        max-width: 100%;
+    }
+    
+  
+
+    .hero-carousel-top {
+        flex-wrap: wrap;
+    }
+
+    .news-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .site-index,
+    .footer-nav {
+    display: none;  
+    }
 
 
+    .footer {
+        justify-content: center;
+    }
+
+}
+
+/* breakpoint */
+@media screen and (max-width: 775px) {
+
+
+.hero-carousel-top {
+    justify-content: space-between;
+}
+
+.carousel-links {
+    flex: 1 0 auto;
+    margin-bottom: 1rem;
+}
+
+.carousel-links li {
+    flex: 1;
+    text-align: center;
+}
+
+.carousel-links li:nth-child(5) {
+    display: none;
+}
+
+}
